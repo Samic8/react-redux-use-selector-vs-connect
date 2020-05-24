@@ -9,7 +9,7 @@ import {
 } from "../../app/counterSlice";
 import styles from "./CounterConnect.module.css";
 
-function Counter({
+export function CounterConnectInner({
   count,
   increment,
   decrement,
@@ -79,4 +79,4 @@ const mapDispatchToProps = (dispatch) => {
 export const CounterConnect = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Counter);
+)(CounterConnectInner);
